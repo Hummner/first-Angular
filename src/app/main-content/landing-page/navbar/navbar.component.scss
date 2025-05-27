@@ -1,0 +1,65 @@
+nav {
+    display: flex;
+    width: 100%;
+    font-size: 32px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    top: 0;
+    position: absolute;
+    height: 100px;
+    font-family: Raleway;
+
+    >img {
+        width: 64px;
+        height: 64px;
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        >a {
+            padding: 0 12px;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.phone_number {
+    padding: 8px 32px;
+    background-color: rgb(136, 25, 25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border: solid 1px white;
+
+    &:hover {
+
+        background-color: rgb(199, 44, 44);
+    }
+
+    >a {
+        font-size: 24px;
+    }
+
+    >img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        margin-right: 4px;
+    }
+}
