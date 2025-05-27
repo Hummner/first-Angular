@@ -1,0 +1,21 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    background-color: rgb(37, 37, 37);
+    height: 100px;
+    >div {
+        >img {
+            width: 200px;
+        }
+    }
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    >img {
+        width: 32px;
+        height: 32px;
+    }
+}
