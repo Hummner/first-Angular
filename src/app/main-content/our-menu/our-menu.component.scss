@@ -16,6 +16,7 @@ section {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+    max-width: 1200px;
 
     >img {
         width: 280px;
@@ -31,12 +32,11 @@ section {
             }
             >td {
                 &:first-child {
-                    padding-right: 100px;
+                    padding-right: 180px;
                 }
             }
         }
     }
-
 }
 
 .align-left {

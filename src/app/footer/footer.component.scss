@@ -4,11 +4,12 @@ section {
     padding: 24px 32px;
     background-color: rgb(37, 37, 37);
     height: 100px;
-    >div {
-        >img {
+}
+
+.footer-logo {
+    >img {
             width: 200px;
         }
-    }
 }
 
 .social-media {

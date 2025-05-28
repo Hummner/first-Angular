@@ -1,9 +1,23 @@
+@mixin links {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        background-color: black;
+    }
+}
+
+@mixin dFlex($jc:center, $ai: center, $g: 0) {
+    justify-content: $jc;
+    align-items: $ai;
+    display: flex;
+    gap: $g;
+}
+
 nav {
     display: flex;
     width: 100%;
     font-size: 32px;
-    justify-content: space-between;
-    align-items: center;
+    @include dFlex($jc: space-between);
     padding: 0 32px;
     top: 0;
     position: absolute;
@@ -16,8 +30,7 @@ nav {
     }
 
     >div {
-        display: flex;
-        align-items: center;
+        @include dFlex($g: 10px);
         cursor: pointer;
 
         >a {
@@ -35,8 +48,7 @@ nav {
 }
 
 a {
-    text-decoration: none;
-    color: white
+    @include links(); 
 }
 
 .phone_number {
